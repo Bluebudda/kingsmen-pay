@@ -1,23 +1,41 @@
-# KingsmenPay
+# Kingsmen Pay - Payment Processing Platform
 
-  Payment Processing Platform for High-Risk Industries.
+A comprehensive payment processing platform built with React, TypeScript, Vite, and Supabase.
 
-  ## Setup
+## Quick Start
 
-  1. Clone this repo
-  2. `cp .env.example .env` and fill in your Supabase credentials
-  3. `npm install`
-  4. `npm run dev`
+1. Install dependencies:
+```bash
+npm install
+```
 
-  ## Environment Variables
+2. Copy `.env.example` to `.env` and add your Supabase credentials
+```bash
+cp .env.example .env
+```
 
-  See `.env.example` for required variables.
+3. Run development server:
+```bash
+npm run dev
+```
 
-  ## Tech Stack
+## Deployment
 
-  - React 19 + TypeScript + Vite
-  - Supabase (auth + database)
-  - Tailwind CSS + shadcn/ui
-  - Recharts for analytics
-  - Wouter for routing
-  
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions on deploying to production with your custom domain.
+
+## Features
+
+- Multi-portal system (Employee, Merchant, Agent, Partner)
+- Application processing and underwriting workflow
+- KYC/KYB verification
+- Transaction management
+- Real-time analytics
+- Secure authentication with Supabase
+
+## Tech Stack
+
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS
+- **Backend:** Supabase (PostgreSQL, Auth, Edge Functions)
+- **Icons:** Lucide React
+- **Routing:** React Router v7

@@ -1,0 +1,120 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A"/>
+      <stop offset="60%" style="stop-color:#162240"/>
+      <stop offset="100%" style="stop-color:#1E3A6E"/>
+    </linearGradient>
+    <linearGradient id="kgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#60A5FA"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Decorative grid lines -->
+  <g opacity="0.06">
+    <line x1="0" y1="0" x2="0" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="750" y1="0" x2="750" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="900" y1="0" x2="900" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="1050" y1="0" x2="1050" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="630" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="0" x2="1200" y2="0" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="105" x2="1200" y2="105" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="210" x2="1200" y2="210" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="315" x2="1200" y2="315" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="525" x2="1200" y2="525" stroke="#60A5FA" stroke-width="1"/>
+    <line x1="0" y1="630" x2="1200" y2="630" stroke="#60A5FA" stroke-width="1"/>
+  </g>
+
+  <!-- Right side decorative circle glow -->
+  <circle cx="960" cy="315" r="280" fill="#1D4ED8" opacity="0.08" filter="url(#softglow)"/>
+  <circle cx="960" cy="315" r="200" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.15"/>
+  <circle cx="960" cy="315" r="140" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.1"/>
+  <circle cx="960" cy="315" r="80" fill="none" stroke="#3B82F6" stroke-width="1" opacity="0.15"/>
+
+  <!-- Globe icon (right side decorative) -->
+  <g transform="translate(960, 315)" opacity="0.18">
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#60A5FA" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="55" ry="100" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="100" ry="30" fill="none" stroke="#60A5FA" stroke-width="1.5"/>
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="#60A5FA" stroke-width="1.5"/>
+    <line x1="0" y1="-100" x2="0" y2="100" stroke="#60A5FA" stroke-width="1.5"/>
+  </g>
+
+  <!-- Left accent stripe -->
+  <rect x="80" y="120" width="5" height="390" rx="3" fill="url(#accent)" opacity="0.7"/>
+
+  <!-- Logo box -->
+  <rect x="116" y="185" width="96" height="96" rx="20" fill="url(#kgrad)" filter="url(#glow)"/>
+  <!-- K letterform -->
+  <g fill="white" font-family="Arial, sans-serif" font-weight="900">
+    <!-- K vertical bar -->
+    <rect x="138" y="205" width="10" height="56" rx="2"/>
+    <!-- K top arm -->
+    <polygon points="148,233 185,205 199,205 162,233"/>
+    <!-- K bottom arm -->
+    <polygon points="148,233 199,281 185,281 148,247"/>
+  </g>
+
+  <!-- Main headline -->
+  <text x="232" y="235" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="64" fill="white" letter-spacing="-1">Kingsmen Pay</text>
+
+  <!-- Blue accent underline -->
+  <rect x="232" y="252" width="480" height="5" rx="3" fill="url(#accent)"/>
+
+  <!-- Tagline -->
+  <text x="232" y="308" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="28" fill="#93C5FD" letter-spacing="0.5">Payment Processing for High-Risk Industries</text>
+
+  <!-- Feature chips -->
+  <!-- Chip 1 -->
+  <rect x="232" y="360" width="168" height="44" rx="22" fill="#1E3A6E" stroke="#3B82F6" stroke-width="1.5" opacity="0.9"/>
+  <text x="316" y="388" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" fill="#93C5FD" text-anchor="middle">🌐 Global Coverage</text>
+
+  <!-- Chip 2 -->
+  <rect x="414" y="360" width="154" height="44" rx="22" fill="#1E3A6E" stroke="#3B82F6" stroke-width="1.5" opacity="0.9"/>
+  <text x="491" y="388" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" fill="#93C5FD" text-anchor="middle">🔒 PCI Compliant</text>
+
+  <!-- Chip 3 -->
+  <rect x="582" y="360" width="168" height="44" rx="22" fill="#1E3A6E" stroke="#3B82F6" stroke-width="1.5" opacity="0.9"/>
+  <text x="666" y="388" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" fill="#93C5FD" text-anchor="middle">⚡ Instant Payouts</text>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="570" width="1200" height="60" fill="#0A1628" opacity="0.8"/>
+  <rect x="0" y="570" width="1200" height="3" fill="url(#accent)"/>
+
+  <!-- Domain in bottom bar -->
+  <text x="232" y="608" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="22" fill="#60A5FA">www.kingsmenpay.com</text>
+
+  <!-- Right text in bottom bar -->
+  <text x="968" y="608" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="18" fill="#475569" text-anchor="end">High-Risk Payment Solutions Since 2019</text>
+</svg>
